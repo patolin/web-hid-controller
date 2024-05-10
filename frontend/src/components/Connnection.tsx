@@ -3,16 +3,9 @@ import {Button} from "@nextui-org/react";
 import { createContext, useContext, useState } from 'react';
 import { ControllerContext, ControllerAPIValue } from "@/context/ControllerContext";
 
-// const handleClick = (setAPIConfig:any, host: string, port: string) => (e:any) => {
-//     ControllerAPIValue.host = host;
-//     ControllerAPIValue.port = port;
-//     setAPIConfig(ControllerAPIValue);
-//     console.log(host, port);
-//     console.log('new context: ', ControllerAPIValue);
-
-// }
 
 export const Connection = () => {
+    // @ts-ignore 
     const { apiConfig, setApiConfig } = useContext(ControllerContext);
 
     const [host, setHost] = useState('localhost');

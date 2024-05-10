@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { ControllerContext } from "@/context/ControllerContext";
 
 export const Slider = ({label, dir}: {label?:string, dir?:"horizontal" | "vertical"}) => {
+    // @ts-ignore 
     const { apiConfig, setApiConfig } = useContext(ControllerContext);
 
     async function handleSliderChange(value: number) {
@@ -28,7 +29,9 @@ export const Slider = ({label, dir}: {label?:string, dir?:"horizontal" | "vertic
             className="max-w-md" 
             orientation={dir?dir:"vertical"}
             label={label}
+            // @ts-ignore 
             onChangeEnd={handleSliderChange}
+            // @ts-ignore 
             onChange={handleChange}
         />
     )

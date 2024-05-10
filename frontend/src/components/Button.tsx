@@ -6,6 +6,8 @@ import { fetchAPI } from "@/modules/fetchAPI";
     
 
 export const Button = ({children, joypadBtnNum, color="primary"}: {children:ReactNode, joypadBtnNum: number, color?: "primary" | "default" | "secondary" | "success" | "warning" | "danger" | undefined }) => {
+    
+    // @ts-ignore 
     const { apiConfig, setApiConfig } = useContext(ControllerContext);
     
     async function handleClick(e:any) {

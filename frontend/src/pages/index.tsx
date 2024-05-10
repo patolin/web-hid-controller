@@ -1,9 +1,7 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import { Switch } from "./components/Switch";
-import { Slider } from "./components/Slider";
-import { Button } from "./components/Button";
-import { Connection } from "./components/Connnection";
+import { Switch } from "../components/Switch";
+import { Slider } from "../components/Slider";
+import { Button } from "../components/Button";
+import { Connection } from "../components/Connnection";
 
 
 export default function Home() {

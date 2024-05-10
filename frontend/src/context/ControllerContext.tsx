@@ -5,4 +5,5 @@ export const ControllerAPIValue = {
     port: '8000'
   }
 
+// @ts-ignore 
 export const ControllerContext = createContext();

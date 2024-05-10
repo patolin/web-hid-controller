@@ -5,6 +5,7 @@ import { ControllerContext } from "@/context/ControllerContext";
 import { fetchAPI } from "@/modules/fetchAPI";
 
 export const Switch = ({children, color, joypadBtnNum}: {children:ReactNode, color: "default" | "primary" | "secondary" | "success" | "warning" | "danger" | undefined,  joypadBtnNum: number}) => {
+    // @ts-ignore 
     const { apiConfig, setApiConfig } = useContext(ControllerContext);
     
     async function handleSwitchChange(e:any) {
